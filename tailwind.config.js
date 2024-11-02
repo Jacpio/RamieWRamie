@@ -20,6 +20,7 @@ export default {
       },
     },
   },
-  plugins: [ require('tailwindcss-border-gradients')(),
+  plugins: [
+      require('tailwindcss-border-gradients')(),
   ],
 }
