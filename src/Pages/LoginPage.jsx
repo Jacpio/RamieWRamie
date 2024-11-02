@@ -21,7 +21,7 @@ export default function LoginPage() {
 
                         <InputText title="Hasło" description="" name="pass" />
 
-                        {/* Przycisk Zaloguj */}
+                        <p className="px-4 text-xs">Nie masz konta? <a className="text-secondary-dark hover:text-secondary-deeper transition hover:underline" href="/register"> Zarejestruj się!</a></p>
                         <button
                             type="submit"
                             className="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-md hover:bg-primary-dark transition duration-300"

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import NavLink from "./NavLink.jsx";
+import SearchInput from "./SearchInput.jsx";
+import {CgProfile} from "react-icons/cg";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -8,31 +10,29 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="bg-primary text-white shadow-lg">
+        <nav className="bg-white text-primary-dark shadow-lg">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <a href="/" className="text-2xl font-bold text-white">
+                        <a href="/" className="text-2xl font-bold text-primary-dark">
                             RamięWRamię
                         </a>
                     </div>
-
-                    {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-8">
-                        {/** Linki nawigacyjne */}
+                    <SearchInput description="Wpisz np.: nazwę organizacji"/>
+                    <div className="hidden lg:flex space-x-8 text-primary-dark">
                         <NavLink href="/" label="Home" />
                         <NavLink href="/about" label="O Nas" />
-                        <NavLink href="/services" label="Usługi" />
                         <NavLink href="/contact" label="Kontakt" />
+                        <NavLink fontSize="2xl" href="/login" label={<CgProfile/>} />
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <div className="flex md:hidden">
+                    <div className="flex lg:hidden">
                         <button
                             onClick={toggleMenu}
                             type="button"
-                            className="text-white hover:text-secondary-dark focus:outline-none transition-colors"
+                            className="text-primary-dark transition hover:text-secondary-dark focus:outline-none"
                         >
                             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path
@@ -48,7 +48,7 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="md:hidden">
+                    <div className="lg:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             <NavLink href="/" label="Home" mobile />
                             <NavLink href="/about" label="O Nas" mobile />

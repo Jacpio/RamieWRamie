@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      width:{
+        '7/20': '35%'
+      },
       colors: {
         primary: {
           DEFAULT: '#22D45D',
@@ -20,5 +23,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }

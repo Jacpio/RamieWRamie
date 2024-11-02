@@ -1,4 +1,4 @@
-import "./index.css";
+import "./main.css";
 import Navbar from "./Elements/Navbar";
 import Banner from './Elements/Banner.jsx'
 import MainSection from "./Elements/MainSection.jsx";
