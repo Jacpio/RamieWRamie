@@ -23,7 +23,6 @@ export default function Navbar() {
                     <div className="hidden lg:flex space-x-8 text-primary-dark">
                         <NavLink href="/" label="Home" />
                         <NavLink href="/about" label="O Nas" />
-                        <NavLink href="/contact" label="Kontakt" />
                         <NavLink fontSize="2xl" href="/login" label={<CgProfile/>} />
                     </div>
 

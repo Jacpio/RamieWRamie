@@ -1,0 +1,52 @@
+{
+  "id": 1,
+  "img": [
+    {
+      "file_name": "logo.jpg",
+      "alt": "Logo"
+    },
+    {
+      "file_name": "spotkanie.jpg",
+      "alt": "spotkanie"
+    }
+  ],
+  "categories": [
+    "Zdrowie psychiczne"
+  ],
+  "description": "Wspieramy psychologów, terapeutów, interwentów kryzysowych i innych specjalistów zdrowia psychicznego",
+  "address": "ul. Mszczonowska 6, Warsaw, Poland",
+  "phone": "22 836 80 80",
+  "email": "profilaktyka@etoh.edu.pl",
+  "events": [
+    {
+     "title": "Spotkanie psychologów",
+     "date": "20.11.2024 r."
+    },
+    {
+      "title": "Jak wspierać dzieci z problemami psychicznymi?",
+      "date": "1.11.2024 r."
+    }
+  ],
+  "realisation": [
+    {
+      "preview_img": "grafika.png",
+      "title": "Reklama i kontrola",
+      "date": "03.11.2024 r."
+    },
+    {
+      "preview_img": "DM-II-grafika.png",
+      "title": "Podstawowe narzędzia Dialogu Motywującego",
+      "date": "21.10.2024 r."
+    }
+  ],
+  "opinions": [
+    {
+      "display_name": "Bartosz Walaszczyk",
+      "opinion": "Super organizacja, dopierdolona, UwU!!!!"
+    },
+    {
+      "display_name": "CzarnyMurzyn",
+      "opinion": "Banany dobre, UwUśne"
+    }
+  ]
+}
