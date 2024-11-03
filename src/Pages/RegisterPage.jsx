@@ -10,7 +10,7 @@ export default function RegisterPage() {
         <div className="min-h-screen bg-gray-100 flex flex-col">
             <Navbar/>
             <div className="flex flex-grow items-center justify-center py-12 px-6">
-                <div className="w-full max-w-md bg-white p-8 shadow-lg rounded-lg">
+                <div className="w-full max-w-xl bg-white p-8 shadow-lg rounded-lg">
                     <h2 className="text-3xl font-bold text-primary text-center mb-8">
                         Rejestracja
                     </h2>

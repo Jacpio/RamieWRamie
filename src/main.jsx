@@ -4,6 +4,7 @@ import App from './App.jsx'
 import LoginPage from "./Pages/LoginPage.jsx";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import RegisterPage from "./Pages/RegisterPage.jsx";
+import SearchResults from "./Pages/SearchResults.jsx";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         path: "/register",
         element: <RegisterPage />,
     },
+    {
+        path: "/search",
+        element: <SearchResults />,
+    }
 ]);
 
 createRoot(document.getElementById('root')).render(
