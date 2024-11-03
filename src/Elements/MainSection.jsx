@@ -13,15 +13,14 @@ export default function MainSection() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-up animate-once animate-duration-[800ms] animate-delay-75">
-                    <div className="p-6 bg-primary-light rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div className="p-6 bg-secondary rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                         <FaHandHoldingHeart className="text-4xl text-white mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold text-white mb-2">Łączenie Wolontariuszy</h3>
                         <p className="text-white font-semibold">
                             Pozwala na łatwe znalezienie organizacji potrzebujących wsparcia w różnych kategoriach pomocy.
                         </p>
                     </div>
-
-                    <div className="p-6 bg-primary-light rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate-fade-up animate-once animate-duration-[800ms] animate-delay-100">
+                    <div className="p-6 bg-secondary rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate-fade-up animate-once animate-duration-[800ms] animate-delay-100">
                         <FaMapMarkerAlt className="text-4xl text-white mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold text-white mb-2">Wsparcie lokalnych inicjatyw</h3>
                         <p className="text-white font-semibold">
@@ -30,7 +29,7 @@ export default function MainSection() {
                     </div>
 
                     {/* Feature 3 */}
-                    <div className="p-6 bg-primary-light rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate-fade-up animate-once animate-duration-[800ms] animate-delay-200">
+                    <div className="transform hover:scale-105 p-6 bg-secondary rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate-fade-up animate-once animate-duration-[800ms] animate-delay-200">
                         <FaTasks className="text-4xl text-white mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold text-white mb-2">Zarządzanie Zadaniami</h3>
                         <p className="text-white font-semibold">
