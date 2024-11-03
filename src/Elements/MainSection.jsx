@@ -16,7 +16,7 @@ export default function MainSection() {
                     <div className="p-6 bg-primary-light rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                         <FaHandHoldingHeart className="text-4xl text-white mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold text-white mb-2">Łączenie Wolontariuszy</h3>
-                        <p className="text-gray-100">
+                        <p className="text-white font-semibold">
                             Pozwala na łatwe znalezienie organizacji potrzebujących wsparcia w różnych kategoriach pomocy.
                         </p>
                     </div>
@@ -24,7 +24,7 @@ export default function MainSection() {
                     <div className="p-6 bg-primary-light rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate-fade-up animate-once animate-duration-[800ms] animate-delay-100">
                         <FaMapMarkerAlt className="text-4xl text-white mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold text-white mb-2">Wsparcie lokalnych inicjatyw</h3>
-                        <p className="text-gray-100">
+                        <p className="text-white font-semibold">
                             Dostęp do mapy z aktualnymi akcjami w okolicy oraz bezpośredni kontakt z organizatorami.
                         </p>
                     </div>
@@ -33,7 +33,7 @@ export default function MainSection() {
                     <div className="p-6 bg-primary-light rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate-fade-up animate-once animate-duration-[800ms] animate-delay-200">
                         <FaTasks className="text-4xl text-white mb-4 mx-auto" />
                         <h3 className="text-xl font-semibold text-white mb-2">Zarządzanie Zadaniami</h3>
-                        <p className="text-gray-100">
+                        <p className="text-white font-semibold">
                             Funkcje przypomnień i zarządzania zadaniami, które ułatwiają organizację czasu dla wolontariuszy.
                         </p>
                     </div>

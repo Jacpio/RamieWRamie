@@ -1,8 +1,7 @@
 import React from 'react';
-// import "../output.css";
 export default function Footer() {
     return (
-            <footer className="bg-white m-4">
+            <footer className="bg-white mt-auto w-full p-4">
                 <div className="w-full mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <h1 className="font-bold text-2xl text-primary-dark">
