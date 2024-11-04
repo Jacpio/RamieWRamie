@@ -13,11 +13,19 @@ export default function SearchResults() {
                     <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-12 animate-fade-up animate-once animate-duration-[800ms] animate-alternate">
                         Znaleziono 13 organizacji
                     </p>
-                    <div className="flex justify-between max-w-2xl mx-auto mb-12 animate-fade-up animate-once animate-duration-[800ms] animate-alternate">
-                        <p className="text-md text-gray-700">sortuj</p>
-                        <p className="text-md text-gray-700">filtruj</p>
+
+
+                    <div className="flex flex-col gap-5 justify-center max-w-2xl mx-auto">
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[100ms] animate-ease-out animate-normal" title="Caritas" description="chreściańska tego typu lubię małe dzieci elo benc." photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="pomoc biednym, ciuchy, tak" />
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[250ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="tagi" />
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[400ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[650ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[800ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[950ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[1100ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
+                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[1250ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
                     </div>
-                    <SearchResultCard title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
+
                 </div>
             </section>
         </div>
