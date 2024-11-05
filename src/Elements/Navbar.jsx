@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavLink from "./NavLink.jsx";
 import SearchInput from "./SearchInput.jsx";
 import {CgProfile} from "react-icons/cg";
+import {motion} from "framer-motion";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +11,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="bg-white text-primary-dark shadow-lg">
+        <motion.nav initial={{y: -50}} animate={{y:0}} className="bg-white text-primary-dark shadow-lg">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -23,7 +24,6 @@ export default function Navbar() {
                     <div className="hidden lg:flex space-x-8 text-primary-dark">
                         <NavLink href="/" label="Home" />
                         <NavLink href="/about" label="O Nas" />
-                        <NavLink href="/contact" label="Kontakt" />
                         <NavLink fontSize="2xl" href="/login" label={<CgProfile/>} />
                     </div>
 
@@ -58,6 +58,6 @@ export default function Navbar() {
                     </div>
                 )}
             </div>
-        </nav>
+        </motion.nav>
     );
 }

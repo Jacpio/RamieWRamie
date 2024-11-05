@@ -16,7 +16,7 @@ export default {
           light: '#23DB60',
         },
         secondary: {
-          DEFAULT: '#B78F3F',
+          DEFAULT: '#29B93CFF',
           dark: '#126E30',
           deeper: '#0C4A21',
         },
@@ -24,6 +24,7 @@ export default {
     },
   },
   plugins: [
+    // eslint-disable-next-line no-undef
     require('tailwindcss-animated')
   ],
 }

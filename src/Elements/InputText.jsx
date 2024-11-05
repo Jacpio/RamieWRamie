@@ -6,7 +6,7 @@ export default function InputText({title, description, name}) {
     return (
         <div className="w-full max-w-md px-4">
             <Field>
-                <Label className="text-sm/6 font-medium text-secondary-dark">{title}</Label>
+                <Label className="text-md font-medium text-secondary-dark">{title}</Label>
                 <Description className="text-sm/6 text-primary">{description}</Description>
                 <Input
                     className={clsx(

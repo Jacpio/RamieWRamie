@@ -4,7 +4,7 @@ import App from './App.jsx'
 import LoginPage from "./Pages/LoginPage.jsx";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import RegisterPage from "./Pages/RegisterPage.jsx";
-import SearchResults from "./Pages/SearchResults.jsx";
+import Organisations from "./Pages/Organisations.jsx";
 
 const router = createBrowserRouter([
     {
@@ -20,9 +20,9 @@ const router = createBrowserRouter([
         element: <RegisterPage />,
     },
     {
-        path: "/search",
-        element: <SearchResults />,
-    }
+        path: "/Organisation",
+        element: <Organisations />,
+    },
 ]);
 
 createRoot(document.getElementById('root')).render(

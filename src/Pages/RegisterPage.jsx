@@ -15,17 +15,15 @@ export default function RegisterPage() {
                         Rejestracja
                     </h2>
                     <form className="space-y-6">
-                        <InputText title="Login" description="" name="login"/>
-                        <InputText title="Imię" description="" name="name"/>
-                        <InputText title="Nazwisko" description="" name="surname"/>
+                        <InputText title="Imię i nazwisko" description="" name="name"/>
                         <InputText title="Numer Telefonu" description="" name="phone_number"/>
                         <InputText title="Email" description="" name="login"/>
                         <InputText title="Hasło" description="" name="pass"/>
                         <InputText title="Powtórz hasło" description="" name="pass"/>
                         <div className="px-4 ">
                             <Field>
-                                <Label className="text-sm/6 mb-2 font-medium text-secondary-dark">Obszar zainteresowań</Label>
-                                <Select name="status" className="max-w-md mt-2 p-2 rounded-md text-white w-full bg-primary"
+                                <Label className="text-md mb-2 font-medium text-secondary-dark">Obszar zainteresowań</Label>
+                                <Select name="status" className="max-w-md mt-2 p-2 rounded-md text-white w-full bg-white ring-primary-dark ring-2 text-black"
                                         aria-label="Project status">
                                     <option value="idk">Jeszcze nie wiem...</option>
                                     <option value="animals">Pomoc zwierzętom</option>
@@ -38,7 +36,7 @@ export default function RegisterPage() {
                             </Field>
                         </div>
                         <Field className="m-4">
-                        <Label className="text-sm/6 mb-4 font-medium text-secondary-dark">Dostępność czasowa</Label>
+                        <Label className="text-md mb-4 font-medium text-secondary-dark">Dostępność czasowa</Label>
                         <RadioGroup  value={selected} onChange={setSelected} aria-label="Server size">
                             {plans.map((plan) => (
                                 <Field key={plan} className="flex items-center gap-2">
@@ -48,7 +46,7 @@ export default function RegisterPage() {
                                     >
                                         <span className="invisible size-2 rounded-full bg-white group-data-[checked]:visible" />
                                     </Radio>
-                                    <Label>{plan}</Label>
+                                    <Label className="text-sm">{plan}</Label>
                                 </Field>
                             ))}
                         </RadioGroup>
