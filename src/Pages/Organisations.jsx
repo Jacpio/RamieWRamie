@@ -12,6 +12,14 @@ export default function Organisations({id}) {
         setOrganisations(data);
 
     })
+    const loadImages = async (path) => {
+        return await Promise.all(
+        async (path) => {
+                const src = await import(`../assets/${image.file_name}`);
+                return src.default;
+            }
+        );
+    };
     return (
         <>
             <Navbar/>
@@ -37,16 +45,17 @@ export default function Organisations({id}) {
                                 </div>
                             </section>
 
-                            <section className="bg-white w-full rounded-md p-5">
+                            <section className="bg-white w-full rounded-md p-5 shadow-lg">
                                 <h1 className="text-center font-semibold text-xl text-primary-dark">Skontaktuj się z
                                     nami!</h1>
                                 <form className="flex flex-col justify-center items-center">
                                     <div className="flex flex-col mt-5 w-10/12">
                                         <label className="text-primary-dark font-semibold mb-2">Dlaczego chciałbyś
                                             dołączyć?</label>
-                                        <textarea placeholder="Chciałbym dołączyć, ponieważ..." rows="10"
-                                                  autoComplete="false" autoCapitalize="on"
-                                                  className="rounded-md p-2 w-full resize-none border-gray-200 ring-2 ring-primary-dark"></textarea>
+                                        <motion.textarea initial={{opacity: 0}} animate={{opacity: 1}}
+                                                         placeholder="Chciałbym dołączyć, ponieważ..." rows="10"
+                                                         autoComplete="false" autoCapitalize="on"
+                                                         className="rounded-md p-2 w-full resize-none border-gray-200 ring-2 ring-primary-dark"></motion.textarea>
                                     </div>
                                     <div className="mt-5 w-10/12">
                                         <motion.button initial={{x: 200, opacity: 0}} animate={{x: 0, opacity: 1}}
@@ -55,6 +64,11 @@ export default function Organisations({id}) {
                                         </motion.button>
                                     </div>
                                 </form>
+                            </section>
+                        </div>
+                        <div>
+                            <section className="bg-white w-full rounded-md p-5 mt-5 shadow-lg">
+                                <img src={loadImages(organisations.img[0])} alt={organisations.name}/>
                             </section>
                         </div>
                     </main>
