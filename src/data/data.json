@@ -37,23 +37,39 @@
   ],
   "realisation": [
     {
+      "id": 0,
       "preview_img": "grafika.png",
       "title": "Reklama i kontrola",
-      "date": "03.11.2024 r."
+      "date": "03.11.2024 r.",
+      "author": "Kasia Nowak",
+      "rate": 4
     },
     {
+      "id": 1,
+      "preview_img": "grafika.png",
+      "title": "Reklama i kontrola",
+      "date": "03.11.2024 r.",
+      "author": "Jan Kowalski",
+      "rate": 2.5
+    },
+    {
+      "id": 2,
       "preview_img": "DM-II-grafika.png",
       "title": "Podstawowe narzędzia Dialogu Motywującego",
-      "date": "21.10.2024 r."
+      "date": "21.10.2024 r.",
+      "author": "Marek Michalski",
+      "rate": 5
     }
   ],
   "opinions": [
     {
       "display_name": "Bartosz Walaszczyk",
+      "date": "05.11.2024r.",
       "opinion": "Super organizacja, dopierdolona, UwU!!!!"
     },
     {
       "display_name": "CzarnyMurzyn",
+      "date": "10.11.2024r.",
       "opinion": "Banany dobre, UwUśne"
     }
   ]

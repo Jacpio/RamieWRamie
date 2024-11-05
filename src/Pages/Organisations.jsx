@@ -1,29 +1,37 @@
 import "../main.css";
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Navbar from "../Elements/Navbar.jsx";
 import data from "../data/data.json";
 
-import {motion} from "framer-motion";
+import {motion, useInView} from "framer-motion";
 import Carousel from "../Elements/Carousel.jsx";
+import ArticleCard from "../Elements/ArticleCard.jsx";
+import {Comment} from "postcss";
+import CommentSection from "../Elements/CommentSection.jsx";
+import Footer from "../Elements/Footer.jsx";
 
 export default function Organisations({id}) {
     const [organisations, setOrganisations] = useState(data);
+    const [imageSources, setImageSources] = useState();
     useEffect(() => {
         setOrganisations(data);
-
-    })
-    const loadImages = async (path) => {
-        return await Promise.all(
-        async (path) => {
-                const src = await import(`../assets/${image.file_name}`);
-                return src.default;
-            }
-        );
-    };
+    }, []);
+    useEffect(() => {
+        const loadImages = async () => {
+            const sources = await Promise.all(
+                organisations.realisation.map(async (image) => {
+                    const src = await import(`../assets/${image.preview_img}`);
+                    return src.default;
+                })
+            );
+            setImageSources(sources);
+        };
+        loadImages();
+    }, [data]);
     return (
         <>
             <Navbar/>
-            {organisations ? (
+            {organisations && imageSources !== undefined ? (
                 <>
                     <Carousel images={organisations.img}/>
                     <main className="max-w-screen-2xl mx-auto">
@@ -58,7 +66,8 @@ export default function Organisations({id}) {
                                                          className="rounded-md p-2 w-full resize-none border-gray-200 ring-2 ring-primary-dark"></motion.textarea>
                                     </div>
                                     <div className="mt-5 w-10/12">
-                                        <motion.button initial={{x: 200, opacity: 0}} animate={{x: 0, opacity: 1}}
+                                        <motion.button initial={{x: 200, opacity: 0}}
+                                                       animate={{x: 0, opacity: 1}}
                                                        className="bg-primary text-white p-3 rounded-xl">Wyślij
                                             zgłoszenie
                                         </motion.button>
@@ -67,11 +76,23 @@ export default function Organisations({id}) {
                             </section>
                         </div>
                         <div>
-                            <section className="bg-white w-full rounded-md p-5 mt-5 shadow-lg">
-                                <img src={loadImages(organisations.img[0])} alt={organisations.name}/>
+                            <section
+                                className="bg-white w-full rounded-md p-5 mt-5 shadow-lg flex flex-col justify-center">
+                                <h1 className="text-primary-dark font-semibold text-3xl mt-2 text-center">Realizacje</h1>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                                    {imageSources.map((image, i) => (
+                                        <ArticleCard index={i} image={image} rest={organisations.realisation[i]}/>
+                                    ))}
+                                </div>
+                            </section>
+                            <section
+                                className="bg-white w-full rounded-md p-5 mt-5 shadow-lg flex flex-col justify-center">
+                                <CommentSection comments={organisations.opinions}/>
                             </section>
                         </div>
                     </main>
+                    <Footer className="mt-10"/>
+
                 </>
             ) : (
                 <div>Loading...</div>

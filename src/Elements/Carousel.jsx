@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 
 const Carousel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +42,9 @@ const Carousel = ({ images }) => {
                 <img
                     src={imageSources[currentIndex]}
                     alt={`Slide ${currentIndex}`}
-                    className="w-full h-full object-cover rounded-lg transition duration-700 ease-in-out"
+                    key={currentIndex}
+
+                    className="w-full animate-fade-up h-full object-cover rounded-lg transition duration-700 ease-in-out"
                 />
             </div>
             <div className="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between px-4">
@@ -62,7 +64,7 @@ const Carousel = ({ images }) => {
             <div className="flex justify-center mt-4 space-x-2">
                 {images.map((src, index) => (
                     <button
-                        key={index}
+
                         onClick={() => setCurrentIndex(index)}
                         className={`w-3 h-3 rounded-full ${
                             index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'
