@@ -4,7 +4,7 @@ import "../main.css"
 // eslint-disable-next-line react/prop-types
 export default function SearchInput({description}) {
     return (
-        <form className="w-7/20" action="/search" method="GET">
+        <form className="" action="/search" method="GET">
             <label htmlFor="search"
                    className="mb-2 text-sm font-medium text-gray-900 sr-only ">Wyszukaj</label>
             <div className="relative">

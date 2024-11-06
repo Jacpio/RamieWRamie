@@ -6,7 +6,9 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import RegisterPage from "./Pages/RegisterPage.jsx";
 import Organisations from "./Pages/Organisations.jsx";
 import SearchResults from "./Pages/SearchResults.jsx";
-
+import CreateOrganisation from "./Pages/CreateOrganisation.jsx";
+import YourProfile from "./Pages/YourProfile.jsx";
+import Profile from "./Pages/Profile.jsx";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -27,6 +29,18 @@ const router = createBrowserRouter([
     {
         path: "/Search",
         element: <SearchResults />,
+    },
+    {
+        path: "/CreateOrganisation",
+        element: <CreateOrganisation />,
+    },
+    {
+        path: "/editProfile",
+        element: <YourProfile />,
+    },
+    {
+        path: "/me",
+        element: <Profile />,
     },
 ]);
 

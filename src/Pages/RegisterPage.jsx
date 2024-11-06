@@ -23,7 +23,7 @@ export default function RegisterPage() {
                         <div className="px-4 ">
                             <Field>
                                 <Label className="text-md mb-2 font-medium text-secondary-dark">Obszar zainteresowań</Label>
-                                <Select name="status" className="max-w-md mt-2 p-2 rounded-md text-white w-full bg-white ring-primary-dark ring-2 text-black"
+                                <Select name="status" className="max-w-md mt-2 p-2 rounded-md w-full bg-white ring-primary-dark ring-2 text-black"
                                         aria-label="Project status">
                                     <option value="idk">Jeszcze nie wiem...</option>
                                     <option value="animals">Pomoc zwierzętom</option>
@@ -35,6 +35,7 @@ export default function RegisterPage() {
                                 </Select>
                             </Field>
                         </div>
+
                         <Field className="m-4">
                         <Label className="text-md mb-4 font-medium text-secondary-dark">Dostępność czasowa</Label>
                         <RadioGroup  value={selected} onChange={setSelected} aria-label="Server size">

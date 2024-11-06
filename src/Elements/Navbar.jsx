@@ -3,6 +3,7 @@ import NavLink from "./NavLink.jsx";
 import SearchInput from "./SearchInput.jsx";
 import {CgProfile} from "react-icons/cg";
 import {motion} from "framer-motion";
+import Dropdown from "./Dropdown.jsx";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -13,19 +14,24 @@ export default function Navbar() {
     return (
         <motion.nav initial={{y: -50}} animate={{y:0}} className="bg-white text-primary-dark shadow-lg">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-center items-center h-16 gap-10">
+                    <div>
+                            <a href="/" className="text-2xl font-bold text-primary-dark">
+                                RamięWRamię
+                            </a>
+                    </div>
+                    <div className="flex-grow">
+                        <SearchInput description="Wpisz np.: nazwę organizacji"/>
+                    </div>
+                    <div>
+                        <div className="hidden lg:flex space-x-8 text-primary-dark">
+                            <NavLink href="/" label="Home"/>
+                            <NavLink href="/about" label="O Nas"/>
+                            <NavLink fontSize="2xl" href="/login" label={<CgProfile/>}/>
+                        </div>
+                    </div>
                     {/* Logo */}
-                    <div className="flex-shrink-0">
-                        <a href="/" className="text-2xl font-bold text-primary-dark">
-                            RamięWRamię
-                        </a>
-                    </div>
-                    <SearchInput description="Wpisz np.: nazwę organizacji"/>
-                    <div className="hidden lg:flex space-x-8 text-primary-dark">
-                        <NavLink href="/" label="Home" />
-                        <NavLink href="/about" label="O Nas" />
-                        <NavLink fontSize="2xl" href="/login" label={<CgProfile/>} />
-                    </div>
+
 
                     {/* Mobile Menu Button */}
                     <div className="flex lg:hidden">
