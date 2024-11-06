@@ -1,11 +1,11 @@
 import {FaCircleUser, FaEnvelope, FaRegStar, FaStar, FaStarHalfStroke} from "react-icons/fa6";
 
-function ProfileView() {
+function ProfileView({me = false}) {
     return (
         <>
             <FaCircleUser className="text-white text-8xl mb-2"/>
-            <h1>Jan Kowalski</h1>
-            <h1 className="mt-4 text-xl">
+            <h1 className="text-xl">Jan Kowalski</h1>
+            <h1 className="mt-4 px-5 text-justify text-xl">
                 Zdecydowałem się pomagać potrzebującym i oddawać
                 swoje nieużywane ubrania, bo widziałem, jak
                 wielu ludzi w mojej społeczności zmaga się z
@@ -23,13 +23,14 @@ function ProfileView() {
                 <FaStarHalfStroke className="text-yellow-400"/>
                 <FaRegStar className="text-yellow-400"/>
             </div>
-            <div className="mt-4">
+            {me ? ( <div className="mt-4">
                 <a href="#"
                    className="flex items-center justify-center rounded-md border-white border-2 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-dark focus:outline-none focus:ring-4 focus:ring-primay">
                     <FaEnvelope className={"mr-2"}/>
                     Wiadomość
                 </a>
-            </div>
+            </div>): null}
+
         </>
     );
 }
