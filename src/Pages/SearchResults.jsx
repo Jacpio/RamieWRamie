@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '/src/Elements/Navbar.jsx';
 import SearchResultCard from '/src/Elements/SearchResultCard.jsx';
+import Footer from '/src/Elements/Footer.jsx';
 export default function SearchResults() {
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
@@ -28,6 +29,7 @@ export default function SearchResults() {
 
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }

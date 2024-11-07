@@ -36,7 +36,7 @@ const Dropdown = () => {
                         transition={{ duration: 0.3 }}
                         className="absolute top-[100%] left-0 w-full bg-white mt-2 rounded-lg shadow-xl overflow-hidden z-50"
                     >
-                        {["Jedzenie", "Ubrania", "Wolontariat"].map((item, index) => (
+                        {["Żywność", "Chemia domowa", "Ubrania", "Wolontariat"].map((item, index) => (
                             <motion.div
                                 key={item}
                                 variants={itemVariants}
