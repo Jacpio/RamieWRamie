@@ -31,7 +31,7 @@ export default function Chat({className, name}) {
                     </div>
                     <div className="h-1/6">
                         <div className="flex justify-between items-center">
-                            <input type={"text"} className="p-1 mx-2 w-full bg-white rounded"/>
+                            <input type={"text"} placeholder="Napisz wiadomość..." className="p-1 mx-2 w-full bg-white rounded"/>
                             <FiSend className="text-primary-dark rounded-lg mx-2 bg-white p-1 h-8 w-8 aspect-square"/>
                         </div>
                     </div>

@@ -3,17 +3,20 @@ import {FaSearch} from "react-icons/fa";
 import "../main.css"
 // eslint-disable-next-line react/prop-types
 export default function SearchInput({description}) {
+    const [query, setQuery] = React.useState('');
     return (
-        <form className="w-full" action="/search" method="GET">
+        <form className="w-full" action={"/search?query=" + query} method="GET">
             <label htmlFor="search"
                    className="mb-2 text-sm font-medium text-gray-900 sr-only ">Wyszukaj</label>
             <div className="relative">
                 <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                     <FaSearch />
                 </div>
-                <input type="search" id="search" name="queue"
+                <input type="search" id="search" name="query"
                        className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-primary-dark"
-                       placeholder={description} required/>
+                       placeholder={description} onChange={e=>{
+                           setQuery(e.target.value);
+                }} required/>
                 <button type="submit"
                         className="text-white absolute end-2.5 bottom-2.5 bg-primary-dark hover:bg-secondary-dark focus:ring-4  font-medium rounded-lg text-sm px-4 py-2 ">Wyszukaj
                 </button>
