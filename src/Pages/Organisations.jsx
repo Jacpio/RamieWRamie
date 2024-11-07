@@ -9,6 +9,7 @@ import ArticleCard from "../Elements/ArticleCard.jsx";
 import {Comment} from "postcss";
 import CommentSection from "../Elements/CommentSection.jsx";
 import Footer from "../Elements/Footer.jsx";
+import Chat from "../Elements/Chat.jsx";
 
 export default function Organisations({id}) {
     const [organisations, setOrganisations] = useState(data);
@@ -91,6 +92,7 @@ export default function Organisations({id}) {
                             </section>
                         </div>
                     </main>
+                    <Chat name={organisations.name}/>
                     <Footer className="mt-10"/>
 
                 </>

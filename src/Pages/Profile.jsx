@@ -7,8 +7,8 @@ function Profile() {
     return (
         <>
             <Navbar/>
-            <div className="flex bg-white items-center justify-center min-h-screen ">
-                <div className="w-2/3 h-max bg-neutral-light rounded-lg shadow-2xl flex" id="tutaj">
+            <div className="flex my-5 items-center justify-center min-h-screen ">
+                <div className="w-2/3 h-max bg-white rounded-lg shadow-2xl flex" id="tutaj">
                     <div className="w-1/3 bg-primary p-4 flex flex-col items-center rounded-tl-xl rounded-bl-xl text-white">
                        <ProfileView me={true}/>
                     </div>

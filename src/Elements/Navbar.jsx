@@ -15,15 +15,15 @@ export default function Navbar() {
         <motion.nav initial={{y: -50}} animate={{y:0}} className="bg-white text-primary-dark shadow-lg">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-center items-center h-16 gap-10">
-                    <div>
+                    <div className="w-1/4 flex justify-left">
                             <a href="/" className="text-2xl font-bold text-primary-dark">
                                 RamięWRamię
                             </a>
                     </div>
-                    <div className="flex-grow">
+                    <div className="w-2/4">
                         <SearchInput description="Wpisz np.: nazwę organizacji"/>
                     </div>
-                    <div>
+                    <div className="w-1/4 flex justify-end">
                         <div className="hidden lg:flex space-x-8 text-primary-dark">
                             <Dropdown />
                             <NavLink fontSize="2xl" href="/login" label={<CgProfile/>}/>

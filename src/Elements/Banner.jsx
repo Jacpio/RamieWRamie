@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Banner() {
     return (
-        <section className="relative bg-primary-light text-white py-20">
+        <section className="relative bg-primary text-white py-20">
             <div className="container mx-auto px-6 text-center">
                 {/* Header */}
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-down animate-once animate-duration-1000 animate-alternate">

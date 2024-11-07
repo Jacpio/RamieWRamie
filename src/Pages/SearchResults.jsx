@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Navbar from '/src/Elements/Navbar.jsx';
 import SearchResultCard from '/src/Elements/SearchResultCard.jsx';
 import Footer from '/src/Elements/Footer.jsx';
+import searchData from '../data/searchResults.json'
 export default function SearchResults() {
+    const [searchResults, setSearchResults] = React.useState([]);
+    useEffect(() => {
+        setSearchResults(searchData);
+    },[])
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
             <Navbar/>
@@ -16,15 +21,11 @@ export default function SearchResults() {
                     </p>
 
 
-                    <div className="flex flex-col gap-5 justify-center max-w-2xl mx-auto">
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[100ms] animate-ease-out animate-normal" title="Caritas" description="chreściańska tego typu lubię małe dzieci elo benc." photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="pomoc biednym, ciuchy, tak" />
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[250ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="tagi" />
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[400ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[650ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[800ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[950ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[1100ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
-                        <SearchResultCard className="animate-fade-up animate-once animate-delay-[1250ms] animate-ease-out animate-normal" title="tytul" description="opis" photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags="nigga" />
+                    <div className="flex flex-col gap-5 justify-center max-w-4xl mx-auto">
+                        {searchResults ? searchResults.map((result, i) => (
+                            <SearchResultCard key={i} className={`animate-fade-up animate-once animate-delay-[400ms] animate-ease-out animate-normal`} title={result.name} description={result.description} photo="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" tags={result.tags} city={result.city}/>
+                        )) : (<></>)}
+
                     </div>
 
                 </div>

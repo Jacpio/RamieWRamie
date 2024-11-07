@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "Caritas Archidiecezji Częstochowskiej",
+    "description": "Organizacja niosąca pomoc potrzebującym poprzez różnorodne działania charytatywne i społeczne.",
+    "tags": [
+      "pomoc charytatywna",
+      "wsparcie społeczne"
+    ],
+    "city": "Częstochowa"
+  },
+  {
+    "id": 2,
+    "name": "Fundacja Chrześcijańska 'Adullam'",
+    "description": "Fundacja wspierająca osoby w trudnej sytuacji życiowej, oferująca m.in. schronienie i pomoc socjalną.",
+    "tags": [
+      "pomoc socjalna",
+      "schronienie"
+    ],
+    "city": "Częstochowa"
+  },
+  {
+    "id": 3,
+    "name": "Stowarzyszenie Pomocy Potrzebującym 'Podaj Dalej'",
+    "description": "Organizacja wspierająca osoby potrzebujące, prowadząca świetlice i programy aktywizacyjne.",
+    "tags": [
+      "wsparcie potrzebujących",
+      "programy aktywizacyjne",
+      "świetlice"
+    ],
+    "city": "Częstochowa"
+  },
+  {
+    "id": 4,
+    "name": "Chrześcijańskie Stowarzyszenie Dobroczynne",
+    "description": "Stowarzyszenie działające na polu pomocy społecznej, oferujące wsparcie dla osób bezdomnych i potrzebujących.",
+    "tags": [
+      "pomoc społeczna",
+      "wsparcie dla bezdomnych"
+    ],
+    "city": "Częstochowa"
+  },
+  {
+    "id": 5,
+    "name": "Fundacja 'Walcze z SM'",
+    "description": "Fundacja wspierająca osoby zmagające się ze stwardnieniem rozsianym, oferująca pomoc i wsparcie.",
+    "tags": [
+      "stwardnienie rozsiane",
+      "wsparcie medyczne"
+    ],
+    "city": "Częstochowa"
+  },
+  {
+    "id": 6,
+    "name": "Fundacja 'Impare'",
+    "description": "Organizacja działająca na rzecz osób potrzebujących, realizująca różnorodne projekty charytatywne.",
+    "tags": [
+      "pomoc charytatywna",
+      "wsparcie potrzebujących"
+    ],
+    "city": "Częstochowa"
+  }
+]

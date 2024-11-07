@@ -41,6 +41,7 @@ const Dropdown = () => {
                                 key={item}
                                 variants={itemVariants}
                                 transition={{ duration: 0.2, delay: index * 0.1 }}
+                                className="hover:bg-gray-100 transition duration-200"
                                 style={{
                                     padding: "10px 20px",
                                     borderBottom: index < 2 ? "1px solid #eee" : "none",
