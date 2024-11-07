@@ -10,6 +10,8 @@ import CreateOrganisation from "./Pages/CreateOrganisation.jsx";
 import YourProfile from "./Pages/YourProfile.jsx";
 import Profile from "./Pages/Profile.jsx";
 import About from "./Pages/About.jsx";
+import Article from "./Pages/Article.jsx";
+import Faq from "./Pages/Faq.jsx";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -44,8 +46,18 @@ const router = createBrowserRouter([
         element: <Profile />,
     },
     {
+
         path: "/about",
         element: <About />,
+    },
+    {
+        path: "/article",
+        element: <Article />,
+    },
+    {
+        path: "/faq",
+        element: <Faq />
+
     }
 ]);
 
