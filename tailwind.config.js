@@ -25,6 +25,8 @@ export default {
   },
   plugins: [
     // eslint-disable-next-line no-undef
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    // eslint-disable-next-line no-undef
+    require('tailwindcss-border-gradients')()
   ],
 }

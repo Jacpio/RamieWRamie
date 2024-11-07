@@ -9,6 +9,7 @@ import SearchResults from "./Pages/SearchResults.jsx";
 import CreateOrganisation from "./Pages/CreateOrganisation.jsx";
 import YourProfile from "./Pages/YourProfile.jsx";
 import Profile from "./Pages/Profile.jsx";
+import About from "./Pages/About.jsx";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path: "/me",
         element: <Profile />,
     },
+    {
+        path: "/about",
+        element: <About />,
+    }
 ]);
 
 createRoot(document.getElementById('root')).render(

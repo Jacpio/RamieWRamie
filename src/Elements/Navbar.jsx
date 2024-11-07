@@ -25,8 +25,7 @@ export default function Navbar() {
                     </div>
                     <div>
                         <div className="hidden lg:flex space-x-8 text-primary-dark">
-                            <NavLink href="/" label="Home"/>
-                            <NavLink href="/about" label="O Nas"/>
+                            <Dropdown />
                             <NavLink fontSize="2xl" href="/login" label={<CgProfile/>}/>
                         </div>
                     </div>

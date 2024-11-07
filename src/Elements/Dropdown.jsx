@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { FaCaretDown } from "react-icons/fa6";
 const Dropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -21,39 +21,22 @@ const Dropdown = () => {
         <div style={{ position: "relative", display: "inline-block" }}>
             <button
                 onClick={() => setIsOpen((prev) => !prev)}
-                style={{
-                    padding: "10px 20px",
-                    borderRadius: "5px",
-                    border: "none",
-                    cursor: "pointer",
-                    background: "#6200ea",
-                    color: "#fff",
-                }}
+                className="border-primary text-primary-dark flex items-center gap-x-1 cursor-pointer border-[1px] rounded-md p-2"
             >
-                Toggle Dropdown
+                Kategorie pomocy <FaCaretDown/>
             </button>
 
             <AnimatePresence>
-                {isOpen && (
+            {isOpen && (
                     <motion.div
                         initial="hidden"
                         animate="visible"
                         exit="exit"
                         variants={containerVariants}
                         transition={{ duration: 0.3 }}
-                        style={{
-                            position: "absolute",
-                            top: "100%",
-                            left: 0,
-                            marginTop: "8px",
-                            background: "#fff",
-                            borderRadius: "8px",
-                            boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
-                            overflow: "hidden",
-                            zIndex: 100,
-                        }}
+                        className="absolute top-[100%] left-0 w-full bg-white mt-2 rounded-lg shadow-xl overflow-hidden z-50"
                     >
-                        {["Profile", "Settings", "Logout"].map((item, index) => (
+                        {["Jedzenie", "Ubrania", "Wolontariat"].map((item, index) => (
                             <motion.div
                                 key={item}
                                 variants={itemVariants}
