@@ -3,7 +3,7 @@ import {FaCircleUser, FaEnvelope, FaRegStar, FaStar, FaStarHalfStroke} from "rea
 function ProfileView({me = false}) {
     return (
         <>
-            <FaCircleUser className="text-white text-8xl mb-2"/>
+            <FaCircleUser className="text-white text-8xl my-2"/>
             <h1 className="text-xl">Jan Kowalski</h1>
             <h1 className="mt-4 px-5 text-justify text-xl">
                 Zdecydowałem się pomagać potrzebującym i oddawać

@@ -2,7 +2,7 @@ import React from 'react';
 import { Description, Field, Input, Label } from '@headlessui/react'
 import clsx from 'clsx'
 
-export default function InputText({title, description, name}) {
+export default function InputText({title, description, name, placeholder}) {
     return (
         <div className="w-full max-w-md px-4">
             <Field>
@@ -14,6 +14,7 @@ export default function InputText({title, description, name}) {
                         'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-secondary-deeper/25'
                     )}
                     name={name}
+                    placeholder={placeholder}
                 />
             </Field>
         </div>
