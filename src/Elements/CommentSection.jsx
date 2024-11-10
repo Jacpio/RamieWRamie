@@ -4,12 +4,12 @@ import React, {useRef} from "react";
 import {BsSendFill, BsThreeDots} from "react-icons/bs";
 import {useInView} from "framer-motion";
 
-export default function CommentSection({comments}) {
+export default function CommentSection({comments, margin = "0px"}) {
     const ref = useRef(null);
-    const isInView = useInView(ref,{once: true, margin: "-100px"});
+    const isInView = useInView(ref,{once: true, margin: margin});
     return (
         <>
-            <h1 className="text-primary font-semibold text-3xl text-center mb-10">Sekcja komentarzy</h1>
+            <h1 className="text-primary font-semibold text-3xl text-center mb-5">Sekcja komentarzy</h1>
             <div className="flex justify-center">
                 <div className="w-full max-w-screen-xl flex justify-center mb-10">
                     <div className="w-full flex gap-x-10">
@@ -20,7 +20,7 @@ export default function CommentSection({comments}) {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center mb-20">
+            <div className="flex justify-center mb-5">
                 <div className="flex w-full max-w-screen-xl flex-col gap-y-10 justify-center items-center">
                     {/* eslint-disable-next-line react/prop-types */}
                     {comments.map((comment, i) => (

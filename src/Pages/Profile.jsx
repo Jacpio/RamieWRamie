@@ -23,7 +23,6 @@ function Profile() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }

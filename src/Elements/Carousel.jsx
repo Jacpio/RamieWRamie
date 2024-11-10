@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
+import logo from "../assets/logo.jpg";
+import spotkanie from "../assets/spotkanie.jpg";
 
 const Carousel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [imageSources, setImageSources] = useState([]);
+    const [imageSources, setImageSources] = useState([logo,spotkanie]);
     useEffect(() => {
         const interval = setInterval(() => {
             goToNext();
@@ -12,29 +14,17 @@ const Carousel = ({ images }) => {
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
+        const newIndex = isFirstSlide ? imageSources.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
 
     const goToNext = () => {
-        const isLastSlide = currentIndex === images.length - 1;
+        const isLastSlide = currentIndex === imageSources.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
 
 
-    useEffect(() => {
-        const loadImages = async () => {
-            const sources = await Promise.all(
-                images.map(async (image) => {
-                    const src = await import(`../assets/${image.file_name}`);
-                    return src.default;
-                })
-            );
-            setImageSources(sources);
-        };
-        loadImages();
-    }, [imageSources]);
 
     return (
         <div className="relative w-full max-w-screen-2xl  mx-auto mt-10">
@@ -62,9 +52,9 @@ const Carousel = ({ images }) => {
                 </button>
             </div>
             <div className="flex justify-center mt-4 space-x-2">
-                {images.map((src, index) => (
+                {imageSources.map((src, index) => (
                     <button
-
+                        key={index}
                         onClick={() => setCurrentIndex(index)}
                         className={`w-3 h-3 rounded-full ${
                             index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'

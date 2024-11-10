@@ -1,5 +1,5 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import {StrictMode} from 'react'
+import {createRoot} from 'react-dom/client'
 import App from './App.jsx'
 import LoginPage from "./Pages/LoginPage.jsx";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -12,57 +12,64 @@ import Profile from "./Pages/Profile.jsx";
 import About from "./Pages/About.jsx";
 import Article from "./Pages/Article.jsx";
 import Faq from "./Pages/Faq.jsx";
+import Footer from "./Elements/Footer.jsx";
+
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <App/>,
     },
     {
         path: "/login",
-        element: <LoginPage />,
+        element: <LoginPage/>,
     },
     {
         path: "/register",
-        element: <RegisterPage />,
+        element: <RegisterPage/>,
     },
     {
         path: "/Organisation",
-        element: <Organisations />,
+        element: <Organisations/>,
     },
     {
         path: "/Search",
-        element: <SearchResults />,
+        element: <SearchResults/>,
     },
     {
         path: "/CreateOrganisation",
-        element: <CreateOrganisation />,
+        element: <CreateOrganisation/>,
     },
     {
         path: "/editProfile",
-        element: <YourProfile />,
+        element: <YourProfile/>,
     },
     {
         path: "/me",
-        element: <Profile />,
+        element: <Profile/>,
     },
     {
 
         path: "/about",
-        element: <About />,
+        element: <About/>,
     },
     {
         path: "/article",
-        element: <Article />,
+        element: <Article/>,
     },
     {
         path: "/faq",
-        element: <Faq />
+        element: <Faq/>
 
     }
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router}/>
-  </StrictMode>,
+    <StrictMode>
+        <div className="flex flex-col justify-between min-h-screen">
+            <div>
+                <RouterProvider router={router}/>
+            </div>
+            <Footer/>
+        </div>
+    </StrictMode>,
 )

@@ -1,11 +1,11 @@
-import React from 'react';
 import "../main.css"
 import {CiLocationOn} from "react-icons/ci";
-import {FaTags} from "react-icons/fa";
+import {useNavigate} from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 export default function SearchResultCard({title, description, tags = [], photo, className, city}) {
+    const navigate = useNavigate();
     return (
-        <div className={className}>
+        <div onClick={()=>navigate("/organisation")} className={className}>
             <div
                 className="border-2 cursor-pointer flex w-full min-h-10 bg-white rounded-lg text-gray-600 shadow-md hover:shadow-xl translate-y-1 hover:translate-y-0 transition ">
                 <img src={photo} className="object-cover object-center w-1/3 h-64 p-3" alt=""/>

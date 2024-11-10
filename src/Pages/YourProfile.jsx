@@ -19,7 +19,6 @@ function YourProfile() {
                         </div>
                     </div>
                 </div>
-            <Footer/>
         </>
     )
 }

@@ -72,5 +72,23 @@
       "date": "10.11.2024r.",
       "opinion": "Banany dobre, UwUśne"
     }
+  ],
+  "chat": [
+    {
+      "text": "Siemaneczko!",
+      "sender": "me"
+    },
+    {
+      "text": "No elo",
+      "sender": "other"
+    },
+    {
+      "text": "Krzyczę głośno...",
+      "sender": "me"
+    },
+    {
+      "text": "JEBAĆ ŻYDÓW!!!",
+      "sender": "other"
+    }
   ]
 }

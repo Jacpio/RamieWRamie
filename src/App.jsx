@@ -5,12 +5,11 @@ import MainSection from "./Elements/MainSection.jsx";
 import Footer from "./Elements/Footer.jsx";
 function App() {
   return (
-    <>
+    <div className="bg-white h-screen">
         <Navbar />
         <Banner />
         <MainSection />
-        <Footer />
-    </>
+    </div>
   )
 }
 

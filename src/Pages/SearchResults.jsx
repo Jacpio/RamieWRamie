@@ -33,7 +33,6 @@ export default function SearchResults() {
 
                 </div>
             </section>
-            <Footer />
         </div>
     );
 }
