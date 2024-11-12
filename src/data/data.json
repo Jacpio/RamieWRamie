@@ -21,10 +21,10 @@
   "categories": [
     "Zdrowie psychiczne"
   ],
-  "description": "Caritas Archidiecezji Częstochowskiej to organizacja charytatywna działająca w ramach Kościoła katolickiego, której głównym celem jest niesienie pomocy osobom potrzebującym, bez względu na ich wyznanie, pochodzenie czy status społeczny. Organizacja ta funkcjonuje na terenie archidiecezji częstochowskiej i jest częścią ogólnopolskiej struktury Caritas, będącej największą organizacją dobroczynną w Polsce.",
+  "description": "Fundacja Chrześcijańska \"Adullam\" w Częstochowie, z siedzibą przy ul. Krakowskiej 34, zajmuje się wsparciem osób i rodzin znajdujących się w trudnych sytuacjach życiowych, głównie poprzez programy socjalne, edukacyjne i pomocowe. Organizacja prowadzi m.in. świetlicę dla dzieci i młodzieży, schronisko dla osób w kryzysie bezdomności oraz klub seniora \"Złote lata\". W ich działalności wyróżnia się także dystrybucja żywności i odzieży oraz działania na rzecz osób uzależnionych.",
   "address": "ul. ks. Stanisława Staszica 5, 42-200 Częstochowa",
-  "phone": "+48 506 394 560",
-  "email": "caritas@caritas.czest.pl",
+  "phone": "+48 34 365 39 46",
+  "email": "biuro@adullam.pl",
   "events": [
     {
      "title": "Spotkanie psychologów",
@@ -63,14 +63,19 @@
   ],
   "opinions": [
     {
-      "display_name": "Bartosz Walaszczyk",
+      "display_name": "KochamPomagać",
       "date": "05.11.2024r.",
-      "opinion": "Super organizacja, dopierdolona, UwU!!!!"
+      "opinion": "Super organizacja, Wow!!!!"
     },
     {
-      "display_name": "CzarnyMurzyn",
+      "display_name": "Jacek12",
       "date": "10.11.2024r.",
-      "opinion": "Banany dobre, UwUśne"
+      "opinion": "Bardzo dobre, świetne"
+    },
+    {
+      "display_name": "Kłysiu68",
+      "date": "11.11.2024r.",
+      "opinion": "Podoba mi się"
     }
   ],
   "chat": [
