@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import logo from "../assets/logo.jpg";
 import spotkanie from "../assets/spotkanie.jpg";
-
-const Carousel = ({ images }) => {
+import cariLogo from "../assets/caritas.webp";
+import caritas from "../assets/caritasono.jpg";
+const Carousel = ({ images, className }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [imageSources, setImageSources] = useState([logo,spotkanie]);
+    const [imageSources, setImageSources] = useState([cariLogo,caritas]);
     useEffect(() => {
         const interval = setInterval(() => {
             goToNext();
@@ -27,7 +28,7 @@ const Carousel = ({ images }) => {
 
 
     return (
-        <div className="relative w-full max-w-screen-2xl  mx-auto mt-10">
+        <div className={`relative w-full ${className} mx-auto mt-10`}>
             <div className="h-64 md:h-96 flex items-center justify-center overflow-hidden">
                 <img
                     src={imageSources[currentIndex]}

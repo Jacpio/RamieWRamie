@@ -8,7 +8,7 @@ export default function SearchResultCard({title, description, tags = [], photo, 
         <div onClick={()=>navigate("/organisation")} className={className}>
             <div
                 className="border-2 cursor-pointer flex w-full min-h-10 bg-white rounded-lg text-gray-600 shadow-md hover:shadow-xl translate-y-1 hover:translate-y-0 transition ">
-                <img src={photo} className="object-cover object-center w-1/3 h-64 p-3" alt=""/>
+                <img src={photo} className="object-contain object-center w-1/3 h-64 p-3" alt=""/>
                 <div className="flex w-2/3 flex-col flex-grow">
                     <div className="w-full">
                         <h3 className="text-2xl font-semibold text-center my-2 text-primary-light">{title}</h3>

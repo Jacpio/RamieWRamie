@@ -8,6 +8,7 @@ import {IoPersonCircleOutline} from "react-icons/io5";
 import CommentSection from "../Elements/CommentSection.jsx";
 import articleData from "../data/articleData.json";
 import {motion, useInView} from "framer-motion";
+import Carousel from "../Elements/Carousel.jsx";
 
 export default function Article() {
     const ref = useRef(null);
@@ -16,6 +17,7 @@ export default function Article() {
         articleData ? (
             <>
                 <Navbar/>
+                <Carousel className="max-w-screen-lg"/>
                 <div className="flex flex-col gap-6 flex-grow items-center justify-center py-12 px-6">
                     <div className="w-full max-w-4xl bg-white p-8 shadow-lg rounded-lg">
                         <div className="flex gap-7 justify-between mb-1">

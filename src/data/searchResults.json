@@ -39,25 +39,5 @@
       "wsparcie dla bezdomnych"
     ],
     "city": "Częstochowa"
-  },
-  {
-    "id": 5,
-    "name": "Fundacja 'Walcze z SM'",
-    "description": "Fundacja wspierająca osoby zmagające się ze stwardnieniem rozsianym, oferująca pomoc i wsparcie.",
-    "tags": [
-      "stwardnienie rozsiane",
-      "wsparcie medyczne"
-    ],
-    "city": "Częstochowa"
-  },
-  {
-    "id": 6,
-    "name": "Fundacja 'Impare'",
-    "description": "Organizacja działająca na rzecz osób potrzebujących, realizująca różnorodne projekty charytatywne.",
-    "tags": [
-      "pomoc charytatywna",
-      "wsparcie potrzebujących"
-    ],
-    "city": "Częstochowa"
   }
 ]

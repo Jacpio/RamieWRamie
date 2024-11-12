@@ -14,7 +14,7 @@ export default function Chat({className, name, chat}) {
                     <motion.div
                         initial={{width: "6rem", height: "6rem"}}
                         animate={{width: "24rem", height: "32rem"}}
-                        className={className + " fixed rounded-xl shadow-sm right-5 bottom-14 bg-gray-100"}>
+                        className={className + " fixed rounded-xl shadow-sm right-5 bottom-5 bg-gray-100"}>
                         <p className="bg-primary-dark rounded-t-lg p-2 text-white font-semibold flex justify-between">
                             <span>{name}</span>
                             <IoCloseOutline onClick={() => setIsOpen(false)} className="text-2xl font-semibold"/>

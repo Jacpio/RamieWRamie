@@ -17,14 +17,11 @@ export default function Footer({className=""}) {
                     </a>
                     <div className="mt-6 lg:max-w-sm">
                         <p className="text-sm text-gray-800">
-                            {/* DODAJ COŚ TUTAJ KREATYWNEGO UWU */}
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam.
+                            Aplikacja łącząca wolontariuszy z lokalnymi ośrodkami i osobami w potrzebie.
+                            Naszą misją jest wspieranie społeczności poprzez ułatwianie kontaktu między osobami chętnymi do pomocy a organizacjami.
                         </p>
                         <p className="mt-4 text-sm text-gray-800">
-                            {/* DODAJ COŚ TUTAJ KREATYWNEGO UWU */}
-                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                            beatae vitae dicta sunt explicabo.
+                            Dołącz i pomóż budować lepsze, wspierające się społeczeństwo.
                         </p>
                     </div>
                 </div>
@@ -130,7 +127,7 @@ export default function Footer({className=""}) {
                             href="/"
                             className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                         >
-                            Regulaminy
+                            Regulamin
                         </a>
                     </li>
                 </ul>

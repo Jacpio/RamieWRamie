@@ -20,7 +20,7 @@ export default function Organisations({id}) {
             <Navbar/>
             {organisations ? (
                     <>
-                        <Carousel images={organisations.img}/>
+                        <Carousel className="max-w-screen-2xl" images={organisations.img}/>
                         <main className="max-w-screen-2xl mx-auto mb-10">
                             <div className="flex gap-5 mt-4">
                                 <section className="bg-white w-full rounded-md p-5 shadow-lg ">
