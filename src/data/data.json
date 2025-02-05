@@ -80,19 +80,19 @@
   ],
   "chat": [
     {
-      "text": "Siemaneczko!",
+      "text": "Witam!",
       "sender": "me"
     },
     {
-      "text": "No elo",
+      "text": "W czym mogę pomóc?",
       "sender": "other"
     },
     {
-      "text": "Krzyczę głośno...",
+      "text": "Chciałbym się zapisać jako wolontariusz, są wolne miejsca?",
       "sender": "me"
     },
     {
-      "text": "JEBAĆ ŻYDÓW!!!",
+      "text": "Oczywiście, że tak!",
       "sender": "other"
     }
   ]
